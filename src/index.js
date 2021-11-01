@@ -3,12 +3,13 @@ import ReactDOM from "react-dom";
 
 const fName = "Harshitha";
 const lName = "T";
-const num = 9;
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 ReactDOM.render(
   <div>
-    <h1>Hello {fName + " " + lName}!</h1>
-    <p>Your lucky number is {num}</p>
+    <p>Created by {fName + " " + lName}</p>
+    <p>Copyright {year}</p>
   </div>,
   document.getElementById("root")
 );
